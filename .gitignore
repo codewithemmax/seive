@@ -1,2 +1,25 @@
+# Environment
 .env*
-/node_modules
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Models (large binary files)
+*.gguf
+/models/
+
+# Sieve runtime artifacts
+/input/
+/output/
+sieve_cache.json
+
+# Node (legacy)
+/node_modules/
