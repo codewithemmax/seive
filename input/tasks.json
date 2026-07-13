@@ -1,0 +1,47 @@
+[
+  {
+    "id": "math_001",
+    "category": "math",
+    "input": "What is 17 * 43 + sqrt(144)?"
+  },
+  {
+    "id": "math_002",
+    "category": "math",
+    "input": "Solve for x: 2x^2 - 8 = 0"
+  },
+  {
+    "id": "code_debug_001",
+    "category": "code debugging",
+    "input": "Fix this Python function:\ndef add(a, b):\n    return a - b"
+  },
+  {
+    "id": "code_gen_001",
+    "category": "code generation",
+    "input": "Write a Python function that returns the factorial of n using recursion."
+  },
+  {
+    "id": "logic_001",
+    "category": "logic/deduction",
+    "input": "All mammals are warm-blooded. Whales are mammals. Therefore, are whales warm-blooded? (A) Yes (B) No (C) Cannot determine"
+  },
+  {
+    "id": "sentiment_001",
+    "category": "sentiment analysis",
+    "input": "This product is absolutely terrible. I want my money back."
+  },
+  {
+    "id": "ner_001",
+    "category": "named entity recognition",
+    "input": "Extract named entities from: 'Apple Inc. was founded by Steve Jobs in Cupertino, California.'"
+  },
+  {
+    "id": "factual_001",
+    "category": "factual QA",
+    "input": "What is the capital of France?"
+  },
+  {
+    "id": "summarization_001",
+    "category": "summarization",
+    "input": "Summarize in one sentence: The Amazon rainforest, often referred to as the 'lungs of the Earth', produces 20% of the world's oxygen and is home to 10% of all species on the planet. Deforestation threatens this critical ecosystem."
+  }
+]
