@@ -1,9 +1,0 @@
-# Core
-sympy==1.13.3
-
-# Local model inference (CPU build — no CUDA)
-llama-cpp-python==0.3.4
-
-# HTTP (stdlib urllib used for Fireworks — no extra dep needed)
-# Env loading for local dev
-python-dotenv==1.0.1
