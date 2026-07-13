@@ -31,11 +31,11 @@ st.markdown("""
     font-weight: 600;
     margin-bottom: 6px;
 }
-.l1 { background: #d4edda; color: #155724; }
+.l1 { background: #d4edda; color: #; }
 .l2 { background: #cce5ff; color: #004085; }
 .l3 { background: #fff3cd; color: #856404; }
 .metric-box {
-    background: #f8f9fa;
+    background: #f8f9fa;Fix demo
     border-radius: 10px;
     padding: 16px;
     text-align: center;
