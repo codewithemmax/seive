@@ -1,9 +1,9 @@
 # Core
 sympy==1.13.3
 
-# Local model inference (CPU build — no CUDA)
-llama-cpp-python==0.3.4
+# llama-cpp-python is optional — loaded at runtime if available (Docker/local only)
+# Omitted here because Streamlit Cloud cannot compile it from source
+# The pipeline falls through to Fireworks when local model is unavailable
 
-# HTTP (stdlib urllib used for Fireworks — no extra dep needed)
 # Env loading for local dev
 python-dotenv==1.0.1
