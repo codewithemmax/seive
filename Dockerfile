@@ -1,7 +1,7 @@
 # ── Stage 1: build llama-cpp-python (CPU) ────────────────────────────────────
-FROM python:3.11-slim AS builder
+FROM python:3.11-slim-bookworm AS builder
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
+RUN rm -rf /var/lib/apt/lists/* && apt-get update && apt-get install -y --no-install-recommends \
         build-essential cmake git \
     && rm -rf /var/lib/apt/lists/*
 
@@ -13,9 +13,9 @@ RUN CMAKE_ARGS="-DLLAMA_BLAS=OFF -DLLAMA_CUBLAS=OFF" \
     pip install --no-cache-dir --prefix=/install -r requirements.txt
 
 # ── Stage 2: runtime image ────────────────────────────────────────────────────
-FROM python:3.11-slim
+FROM python:3.11-slim-bookworm
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
+RUN rm -rf /var/lib/apt/lists/* && apt-get update && apt-get install -y --no-install-recommends \
         libgomp1 curl \
     && rm -rf /var/lib/apt/lists/*
 
